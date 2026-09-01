@@ -1,0 +1,181 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #5a5a5a;
+  --accent: #1a3c6e;
+  --border: #e5e5e5;
+  --max-width: 760px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.site-name {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.site-nav a {
+  color: var(--text);
+  margin-left: 20px;
+  font-size: 0.95rem;
+}
+
+.site-nav a:first-child {
+  margin-left: 0;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 20px 20px;
+}
+
+.intro {
+  margin-bottom: 48px;
+}
+
+.profile-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.intro h1 {
+  font-size: 1.8rem;
+  margin: 0 0 6px;
+}
+
+.tagline {
+  color: var(--muted);
+  margin: 0 0 14px;
+  font-size: 1rem;
+}
+
+.program-line {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 16px;
+}
+
+.bio {
+  margin: 0 0 16px;
+}
+
+.links-line {
+  font-size: 0.95rem;
+}
+
+.section {
+  margin-bottom: 48px;
+  padding-top: 8px;
+}
+
+.section h2 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+
+.entry {
+  margin-bottom: 28px;
+}
+
+.entry-major {
+  margin-bottom: 36px;
+}
+
+.entry h3 {
+  font-size: 1.05rem;
+  margin: 0 0 4px;
+}
+
+.entry-context {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0 0 4px;
+}
+
+.entry-desc {
+  margin: 8px 0 6px;
+  font-size: 0.95rem;
+}
+
+.entry-status {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0 0 6px;
+  font-style: italic;
+}
+
+.entry-links {
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+}
+
+.entry-image {
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 24px 20px 40px;
+}
+
+@media (max-width: 480px) {
+  .site-nav a {
+    margin-left: 12px;
+    font-size: 0.88rem;
+  }
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+}
