@@ -78,11 +78,10 @@ main {
   align-items: flex-start;
   gap: 40px;
 }
-
 .profile-photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 170px;
+  height: 155px;
+  border-radius: 14px;
   object-fit: cover;
   margin: 0;
   flex-shrink: 0;
